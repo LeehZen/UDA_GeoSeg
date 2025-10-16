@@ -3,3 +3,4 @@ model_weights/
 pretrain_weights/
 logs/
 */__pycache__/ 
+README.md
