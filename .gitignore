@@ -1,0 +1,6 @@
+data/
+model_weights/
+pretrain_weights/
+lightning_logs/
+*/__pycache__/ 
+README.md
