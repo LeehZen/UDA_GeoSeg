@@ -1,6 +1,6 @@
 data/
 model_weights/
 pretrain_weights/
-logs/
+lightning_logs/
 */__pycache__/ 
 README.md
