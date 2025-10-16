@@ -2,7 +2,7 @@ import ttach as tta
 import multiprocessing.pool as mpp
 import multiprocessing as mp
 import time
-from train_supervision import *
+from train_supervision_self_train_OSA_v2 import *
 import argparse
 from pathlib import Path
 import cv2
@@ -66,7 +66,7 @@ def main():
     config = py2cfg(args.config_path)
     args.output_path.mkdir(exist_ok=True, parents=True)
 
-    model = Supervision_Train.load_from_checkpoint(
+    model = Supervision_Train_UDA.load_from_checkpoint(
         os.path.join(config.weights_path, config.test_weights_name + '.ckpt'), config=config)
     model.cuda()
     model.eval()

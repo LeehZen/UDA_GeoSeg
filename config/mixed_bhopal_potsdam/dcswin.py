@@ -21,7 +21,7 @@ num_classes = len(CLASSES)
 classes = CLASSES
 
 weights_name = "dcswin-base-1024-e30"
-weights_path = "model_weights/potsdam/{}".format(weights_name)
+weights_path = "model_weights/mixed_bhopal_potsdam/{}".format(weights_name)
 test_weights_name = "dcswin-base-1024-e30"
 log_name = 'mixed_bhopal_potsdam/{}'.format(weights_name)
 monitor = 'val_F1'
